@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 806b2b7e47117a04386bd51ae1f050ad
+timeCreated: 1528122299
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Quarca
+  fontNames:
+  - Quarca
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d2e6b377f10bcfe49a61f239bed7bb22, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
