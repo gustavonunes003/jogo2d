@@ -6,6 +6,8 @@ public class PlayerCtrl : MonoBehaviour {
 
 public float horizontalSpeed = 10f;
 
+public float jumpSpeed = 3000f;
+
 Rigidbody2D rb;
 
 	// Use this for initialization
@@ -23,9 +25,20 @@ Rigidbody2D rb;
 			MoveHorizontal(horizontalPlayerSpeed);
 		}
 
-		else{StopMovingHorizontal();}
+		else{
+			
+			StopMovingHorizontal();
+
+		}
+
+if (Input.GetButtonDown("Jump"))
+{
+Jump();
+}
 		
 }
+
+
 
 void MoveHorizontal(float speed){
 
@@ -34,6 +47,11 @@ rb.velocity = new Vector2(speed, rb.velocity.y);
 
 void StopMovingHorizontal() {
 rb.velocity = new Vector2(0f, rb.velocity.y);
+}
+
+void Jump() 
+{
+rb.AddForce(new Vector2(0f, jumpSpeed));
 }
 
 }
